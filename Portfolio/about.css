@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Editorial-Old';
+    src: url('Assets/Fonts/Editorial-Old.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ThinItalic';
+    src: url('Assets/Fonts/static/Montserrat-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('Assets/Fonts/static/Montserrat-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url('Assets/Fonts/static/Montserrat-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('Assets/Fonts/static/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-MediumItalic';
+    src: url('Assets/Fonts/static/Montserrat-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('Assets/Fonts/static/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-LightItalic';
+    src: url('Assets/Fonts/static/Montserrat-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('Assets/Fonts/static/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('Assets/Fonts/static/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLightItalic';
+    src: url('Assets/Fonts/static/Montserrat-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url('Assets/Fonts/static/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    ::-webkit-scrollbar {
+        display: none;  
+    }
+    /* cursor: none; */
+    /* background-color: black; */
+}
+
+#body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+nav a:hover {
+    font-size: 1.4vw;
+    font-weight: 500;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+}
+
+#hero {
+    /* height: 100vh; */
+    /* width: 100%; */
+    position: relative;
+    cursor:none;
+    background-color: rgb(0, 0, 0);
+}
+
+#work {
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+#work h1 {
+    position: absolute;
+    top: 0;
+    /* left: 1.85vw; */
+    font-family: 'Editorial-Old', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#work .magnet1 {
+    -webkit-text-stroke: 0.05vw rgb(247, 237, 218);
+    color: transparent;
+    font-size: 25vw;
+    left: 1.5vw;
+    letter-spacing: -9vw;
+    text-wrap: nowrap;
+}
+
+#work .magnet2 {
+    letter-spacing: -1vw;
+    left: 0.5vw;
+    color: rgb(230, 222, 209);
+    font-size: 25vw;
+    left: 9vw;
+}
+
+#hero #img {
+    height: 90vh;
+    width: 20vw;
+    position: relative;
+    margin-top: 20vh;
+    overflow-y: hidden;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, 0%);
+
+        -ms-transform: translate(-50%, 0%);
+
+            transform: translate(-50%, 0%);
+    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center;
+    background-image: url(Assets/Project/image.webp);
+    background-color: #ffffff;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page2 .elementor-heading-title {
+    color: transparent;
+    -webkit-text-stroke: 0.001vw;
+    -webkit-text-stroke-color: black;
+    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+    position: relative;
+    font-family: 'Editorial-Old', sans-serif;
+    font-size: 5vw;
+}
+
+#page3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+

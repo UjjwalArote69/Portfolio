@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Editorial-Old';
+    src: url('Assets/Fonts/Editorial-Old.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ThinItalic';
+    src: url('Assets/Fonts/static/Montserrat-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('Assets/Fonts/static/Montserrat-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url('Assets/Fonts/static/Montserrat-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('Assets/Fonts/static/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-MediumItalic';
+    src: url('Assets/Fonts/static/Montserrat-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('Assets/Fonts/static/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-LightItalic';
+    src: url('Assets/Fonts/static/Montserrat-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('Assets/Fonts/static/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('Assets/Fonts/static/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLightItalic';
+    src: url('Assets/Fonts/static/Montserrat-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url('Assets/Fonts/static/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    ::-webkit-scrollbar {
+        display: none;  
+    }
+    cursor: none;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+nav a:hover {
+    font-size: 1.4vw;
+    font-weight: 500;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    cursor:none;
+    background-color: white;
+}
+
+#work {
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+
+#work h1 {
+    position: absolute;
+    top: 0;
+    left: 1.85vw;
+    font-family: 'Editorial-Old', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#work .magnet1 {
+    
+    -webkit-text-stroke: 0.05vw black;
+    color: transparent;
+    font-size: 21.5vw;
+    letter-spacing: -5.1vw;
+    text-wrap: nowrap;
+}
+
+#work .magnet2 {
+    letter-spacing: -0.2vw;
+    font-size: 21.5vw;
+}
+
+a-waves {
+    --x: -0.5vw;
+    --y: 100%;
+    position: absolute;
+    top: 58vh;
+    left: 0;
+    width: 100%;
+    height: 42vh;
+    overflow: hidden;
+}
+a-waves:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw;
+    height: 1vw;
+    background: black;
+    border-radius: 50%;
+    transform: translate3d(calc(var(--x) - 50%), calc(var(--y) - 50%), 0);
+    content: "";
+}
+a-waves svg {
+    display: block;
+    border: 0.2vw solid black;
+    width: 100%;
+    height: 100%;
+}
+a-waves svg path {
+    fill: none;  
+    stroke:black;
+    stroke-width: 0.2vw;
+}
+
+/* #preview {
+    width: 100%;
+    padding-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+#preview h1 {
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: 1.5vw;
+    color: wheat;
+}
+
+.element {
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+} */
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 50vh;
+    padding-bottom: 40vh;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: crimson
+} 
+
+.container>h3 {
+    
+    font-size: 1.5vw;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+.container h2 {
+    font-size: 2.5vw;
+    font-weight: 100;
+    font-family: 'Editorial-Old';
+    font-style:italic;
+
+}
+
+.container .first{
+    margin-top: -10vh;
+}
+
+.element {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: royalblue;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+} */
+
+#second {
+    color: #fff;
+    padding-top: 20vh;
+    /* background-color: black; */
+    width: 100%;
+    text-align: center;
+    
+    /* height: 100vh; */
+}
+
+#second h2{
+    font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 100;
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    /* border-top: 1px solid #888; */
+}
+
+.elem h1 {
+    text-transform: uppercase;
+    font-size: 3vw;
+    opacity: .7;
+    font-weight: 100;
+    font-family: 'Editorial-Old', sans-serif;
+}
+
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 200%;
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
